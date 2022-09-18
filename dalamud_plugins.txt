@@ -1,0 +1,9 @@
+# Require Dalamud:
+PostMeteion
+FishNotify
+SomethingNeedDoing
+# Other Tweaks
+YesAlreadly
+SimpleTweaks
+OOBplugin
+Splaton

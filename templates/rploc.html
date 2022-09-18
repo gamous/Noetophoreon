@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="utf-8">
+    <title>RolePlayLocation List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+</head>
+<body>
+    <h2 style="text-align:center">RolePlayLocation List</h2>
+    <p style="text-align:center">{{ rp_logs|length }} RolePlayLocation</p>
+    <div>
+    <ul >
+        {% for rp_log in rp_logs %}
+        <li>[{{rp_log.update_time.strftime("%H:%M-%m.%d")}}]
+            {{ rp_log.location }}
+            {{ ''+rp_log.name+'' if rp_log.name and rp_log.name!='' else ''}}
+            {{'[招]' if rp_log.recruit else ''}} {{rp_log.tags}}
+            <br>{{rp_log.content}}
+
+        </li>
+        {% endfor %}
+    </ul>
+    </div>
+    <footer style="text-align:center">
+        <small >Noetophoreon - Meteion's Report</small>
+    </footer>
+</body>
+</html>

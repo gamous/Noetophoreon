@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'FFXIV';
+    src: url('FFXIV_Lodestone_SSF.woff') format('truetype'),
+         url('FFXIV_Lodestone_SSF.ttf') format('woff');
+    /*unicode-range: U+E020-E0DB;*/
+}
+
+html {
+    position: relative;
+    overflow-x: hidden !important;
+  }
+  
+body {
+  font-family: 'FFXIV', sans-serif;
+  font-size: 22px;
+  color:#333333;
+  background: #f2f7fd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ul {
+    width: 100%;
+    max-width: 800px;
+    padding: 25px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (max-width: 768px) {
+      margin-top: 20px
+    }
+}
+li {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #e2e2ee;
+    transition: all .35s ease-in-out;
+    transform: scale(0.9);
+    box-shadow: 7px 7px 16px #c0c0ca,
+    -7px -7px 16px #ffffff;
+  }
+  
